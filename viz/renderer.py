@@ -45,7 +45,7 @@ class CaptureSuccess(Exception):
 
 #----------------------------------------------------------------------------
 
-def add_watermark_np(input_image_array, watermark_text="AI Generated"):
+def add_watermark_np(input_image_array, watermark_text=""):
     image = Image.fromarray(np.uint8(input_image_array)).convert("RGBA")
 
     # Initialize text image
